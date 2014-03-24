@@ -3,7 +3,8 @@
 # check for link configuration via -link elasticsearch:es
 if [ -n "$ES_PORT_9200_TCP" ] ; then
     ES_HOST="window.location.hostname"
-    ES_PORT="9200"
+    # redirect via haproxy
+    ES_PORT="80"
 else
   ES_HOST=${ES_HOST:-window.location.hostname}
   ES_PORT=${ES_PORT:-9200}

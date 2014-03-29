@@ -18,7 +18,7 @@ function (Settings) {
   elasticsearch:    "http://"  + $ES_HOST + ":" + "$ES_PORT",
   default_route:    '/dashboard/file/default.json',
   kibana_index:     'kibana-int',
-  modules:          ['histogram','map','pie','table','filtering',
+  panel_names:          ['histogram','map','pie','table','filtering',
                     'timepicker','text','hits',
                     'column','trends','bettermap',
                     'query', 'terms', 'stats','sparklines'],
